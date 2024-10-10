@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f6e15bc383.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Tech Enthusiast</p>
+                <h1>Hi, I'm <span>Adil</span><br>From Massachusetts</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/AboutMe.webp">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, my name is Adil and I am a student with a passion for Cybersecurity. 
+                        I primarily code in Java and have been developing my skills for several years. 
+                        I am always looking for new challenges and opportunities to enhance my knowledge and expertise in this exciting field.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>Game Development</span><br>Game Development using Unity/Unreal Engine</li>
+                            <li><span>App Development</span><br>Building iOS apps using Swift</li>
+                            <li><span>Java Skills</span><br>Experienced in using Java for software development and problem-solving.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Currently none</span><br>Maybe soon</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Student at ABRHS</li>
+                            <li><span>2024-2028</span><br>Student at University of Massachusetts Lowell</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class ="fas fa-code" ></i>
+                    <h2>Web Design</h2>
+                    <p>When it comes to web design, I combine my creativity 
+                        and technical skills to craft visually appealing websites 
+                        that are also intuitive and functional for users.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>When developing apps in Swift, I focus on creating 
+                        intuitive user interfaces and efficient code that 
+                        ensures optimal app performance on iOS devices.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I use my skill in Swift to create innovative 
+                        and user-friendly apps that provide an engaging 
+                        experience for users.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/WeatherApp.png">
+                    <div class="layer">
+                        <h3>Realtime Weather App</h3>
+                        <p>The app allows you to see the current weather at your location.
+                            See the source on my github</p>
+                            <a href="https://github.com/Didilusse/RealtimeWeather" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/TDGame.png" alt="Tower Defense Game">
+                    <div class="layer">
+                        <h3>Tower Defense Game</h3>
+                        <p>A strategic Java-based Tower Defense game where players defend their 
+                            base from enemy waves by placing and upgrading towers. 
+                            Each tower has unique abilities, and players must manage 
+                            resources to survive progressively tougher challenges.
+
+                        </p>
+                        <a href="https://github.com/Didilusse/Tower-Defense-Game" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/CubbyMac.png">
+                    <div class="layer">
+                        <h3>First Mobile Game</h3>
+                        <p>In this exciting game, you take on the role of a cube in a battle 
+                            against waves of enemies. As you defeat your enemies, you earn 
+                            valuable Creds that can be used to upgrade your character and become even stronger.
+                            Download it from the Play Store.</p>
+                            <a href="https://didilusse.itch.io/cubby" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Didilusse" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Follow Me</h1>
+                    <div class="social-icons">
+                        <a href="https://didilusse.itch.io" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-itch-io"></i> Itch.io
+                        </a>
+                        <a href="https://www.youtube.com/c/@Didilusse" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-youtube"></i> YouTube
+                        </a>
+                        <a href="https://github.com/Didilusse" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="https://leetcode.com/u/Didilusse/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-regular fa-file-code"></i> LeetCode
+                        </a>
+                    </div>
+                    <a href="images/resume.pdf" class="btn btn-download" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
